@@ -1,6 +1,15 @@
 <p align="center">
-  <img src="logo.png" alt="ShadowNet Logo" width="1000"/>
+  <img src="logo.png" alt="ShadowNet Logo" width="800"/>
 </p>
+
+<p align="center">
+  <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
+  <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
+  <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
+  <em>Inshallah — By His will, not mine.</em>
+</p>
+
+---
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Linux-black?style=for-the-badge&logo=linux)
@@ -8,13 +17,6 @@
 ![Author](https://img.shields.io/badge/Author-0xredlog-red?style=for-the-badge)
 
 ---
-
-<p align="center">
-  <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
-  <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
-  <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br>
-  <em>Inshallah</em>
-</p>
 
 ## What is ShadowNet?
 
@@ -111,6 +113,9 @@ for port in range(1, 1001):
     if result == 0:
         print(f"[+] Port {RED}{port}{RESET} OPEN")
     sock.close()
+```
+
+---
 
 ## Legal
 
@@ -141,7 +146,9 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 
 ---
 
-First tool. Not the last. — 0xredlog
+*First tool. Not the last. — 0xredlog*
 
-<p align="center"> <em>إِنْ شَاءَ اللَّهُ</em><br> <strong>Inshallah</strong> </p>
-
+<p align="center">
+  <em>إِنْ شَاءَ اللَّهُ</em><br>
+  <strong>Inshallah</strong>
+</p>
