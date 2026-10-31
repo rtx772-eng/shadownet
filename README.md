@@ -8,6 +8,10 @@
                                         by 0xredlog v1.0
 ```
 
+<p align="center">
+  <img src="logo.png" alt="ShadowNet Logo" width="400"/>
+</p>
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Linux-black?style=for-the-badge&logo=linux)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
