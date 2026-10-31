@@ -9,6 +9,13 @@
 
 ---
 
+<p align="center">
+  <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
+  <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
+  <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br>
+  <em>Inshallah</em>
+</p>
+
 ## What is ShadowNet?
 
 ```
@@ -20,9 +27,6 @@
 
                                         by 0xredlog v1.0
 ```
-Alhamdulillah for everything. 🤲
-
-In the name of Allah , the Most Gracious, the Most Merciful.
 
 ShadowNet is a lightweight CLI port scanner built from scratch in Python.  
 It scans a target IP across ports 1–1000 and reports every open port — fast, clean, no noise.
@@ -139,5 +143,8 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 
 *First tool. Not the last. — 0xredlog
 
-Inshallah
+<p align="center">
+  <em>إِنْ شَاءَ اللَّهُ</em><br>
+  <strong>Inshallah</strong>
+</p>
 
