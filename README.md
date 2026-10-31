@@ -1,15 +1,5 @@
-```
- ____  _               _               _   _      _
-/ ___|| |__   __ _  __| | _____      _| \ | | ___| |_
-\___ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  \| |/ _ \ __|
- ___) | | | | (_| | (_| | (_) \ V  V /| |\  |  __/ |_
-|____/|_| |_|\__,_|\__,_|\___/ \_/\_/ |_| \_|\___|\__|
-
-                                        by 0xredlog v1.0
-```
-
 <p align="center">
-  <img src="logo.png" alt="ShadowNet Logo" width="400"/>
+  <img src="logo.png" alt="ShadowNet Logo" width="1000"/>
 </p>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
@@ -20,6 +10,16 @@
 ---
 
 ## What is ShadowNet?
+
+```
+ ____  _               _               _   _      _
+/ ___|| |__   __ _  __| | _____      _| \ | | ___| |_
+\___ \| '_ \ / _` |/ _` |/ _ \ \ /\ / /  \| |/ _ \ __|
+ ___) | | | | (_| | (_| | (_) \ V  V /| |\  |  __/ |_
+|____/|_| |_|\__,_|\__,_|\___/ \_/\_/ |_| \_|\___|\__|
+
+                                        by 0xredlog v1.0
+```
 
 ShadowNet is a lightweight CLI port scanner built from scratch in Python.  
 It scans a target IP across ports 1–1000 and reports every open port — fast, clean, no noise.
