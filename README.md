@@ -141,10 +141,7 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 
 ---
 
-*First tool. Not the last. — 0xredlog
+First tool. Not the last. — 0xredlog
 
-<p align="center">
-  <em>إِنْ شَاءَ اللَّهُ</em><br>
-  <strong>Inshallah</strong>
-</p>
+<p align="center"> <em>إِنْ شَاءَ اللَّهُ</em><br> <strong>Inshallah</strong> </p>
 
