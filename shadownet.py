@@ -40,7 +40,7 @@ def scan(port):
             with open(f'{ip}-results.txt', 'a') as f:
                 f.write(f"Port {port} OPEN -{banner}\n")
         except:
-            with open("results.txt", "a") as f:
+            with open(f"{ip}results.txt", "a") as f:
                  f.write(f"Port {port} OPEN \n")
         pass
     sock.close()
