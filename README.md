@@ -30,9 +30,9 @@
 
                                         by 0xredlog v1.0
 ```
-
-ShadowNet is a lightweight CLI port scanner built from scratch in Python.  
-It scans a target IP across ports 1–1000 and reports every open port — fast, clean, no noise.
+ShadowNet is a lightweight CLI port scanner and reconnaissance tool built from scratch in Python.
+It scans a target IP across ports 1–1000, grabs service banners, and saves
+results automatically — fast, clean, no noise.
 
 Built as a first offensive security tool by a self-taught red teamer.
 
@@ -41,8 +41,11 @@ Built as a first offensive security tool by a self-taught red teamer.
 ## Features
 
 - 🔍 Scans ports 1 to 1000
-- ⚡ Fast timeout per port (0.5s)
-- 🎯 Clean output — open ports only
+- ⚡ Multi-threaded — 1000 workers at once
+- 🎯 Banner grabbing — identifies service + version
+- 💾 Auto-saves results to [target_ip]_results.txt
+- 🛡️ Error handling — never crashes on bad input
+- 🔴 Red terminal output
 - 💻 Pure Python — no dependencies
 - 🖥️ Works on any Linux machine
 
@@ -59,7 +62,10 @@ python3 shadownet.py
 ```
 Enter target IP: 45.33.32.156
 
+[*] Scanning 45.33.32.156...
+
 [+] Port 22 OPEN
+    Banner: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
 [+] Port 80 OPEN
 ```
 
@@ -69,27 +75,21 @@ Enter target IP: 45.33.32.156
 
 ```
 1. Ask user for target IP
-2. Loop through ports 1 to 1000
-3. Try to connect to each port (socket)
-4. Print open ports only
+2. Launch 1000 threads — one per port
+3. Each thread knocks on its port (socket)
+4. If open → grab banner + print + save to file
+5. Results saved to [ip]_results.txt automatically
 ```
 
-Under the hood — Python's `socket` library knocks on each port.  
-If the connection returns `0` → port is open.  
-Anything else → closed, move on.
-
----
+Under the hood — Python's `socket` library knocks on each port.
+`threading` runs all 1000 workers simultaneously.
+If the connection returns `0` → port is open → banner grabbed.
+Anything else → closed, move on silently.
 
 ## Code
 
 ```python
-import socket
 
-RED = "\033[91m"
-RESET = "\033[0m"
-
-banner = f"""
-{RED}
  ____  _               _               _   _      _
 / ___|| |__   __ _  __| | _____      _| \\ | | ___| |_
 \\___ \\| '_ \\ / _` |/ _` |/ _ \\ \\ /\\ / /  \\| |/ _ \\ __|
@@ -102,21 +102,6 @@ banner = f"""
   Unauthorized scanning is illegal.
 {RESET}"""
 
-print(banner)
-
-ip = input("Enter target IP: ")
-print(f"\n{RED}[*] Scanning {ip}...{RESET}\n")
-
-for port in range(1, 1001):
-    sock = socket.socket()
-    sock.settimeout(0.5)
-    result = sock.connect_ex((ip, port))
-    if result == 0:
-        print(f"[+] Port {RED}{port}{RESET} OPEN")
-    sock.close()
-```
-
----
 
 ## Legal
 
