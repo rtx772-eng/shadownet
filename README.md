@@ -3,10 +3,12 @@
 </p>
 
 <p align="center">
+  
   <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
-  <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
+  
+  <em>In the name of Allah , the Most Gracious , the Most Merciful </em><br><br>
   <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
-  <em>Inshallah — By His will, not mine.</em>
+  <em>InshAllah — By His will .</em>
 </p>
 
 ---
