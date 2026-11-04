@@ -3,11 +3,10 @@
 </p>
 
 <p align="center">
- <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
-  
-  <em>In the name of Allah , the Most Gracious , the Most Merciful </em><br><br>
+  <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
+  <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
   <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
-  <em> InshAllah — By His will .</em>
+  <em>Inshallah — By His will, not mine.</em>
 </p>
 
 ---
@@ -28,11 +27,11 @@
  ___) | | | | (_| | (_| | (_) \ V  V /| |\  |  __/ |_
 |____/|_| |_|\__,_|\__,_|\___/ \_/\_/ |_| \_|\___|\__|
 
-                                        by 0xredlog v1.0
+                                        by 0xredlog v2.0
 ```
+
 ShadowNet is a lightweight CLI port scanner and reconnaissance tool built from scratch in Python.
-It scans a target IP across ports 1–1000, grabs service banners, and saves
-results automatically — fast, clean, no noise.
+It scans a target IP across ports 1–1000, grabs service banners, and saves results automatically — fast, clean, no noise.
 
 Built as a first offensive security tool by a self-taught red teamer.
 
@@ -43,9 +42,10 @@ Built as a first offensive security tool by a self-taught red teamer.
 - 🔍 Scans ports 1 to 1000
 - ⚡ Multi-threaded — 1000 workers at once
 - 🎯 Banner grabbing — identifies service + version
-- 💾 Auto-saves results to [target_ip]_results.txt
+- 💾 Auto-saves results to [target_ip]-results.txt
 - 🛡️ Error handling — never crashes on bad input
 - 🔴 Red terminal output
+- 🚩 Argument flags — `-t` `-p` `-o`
 - 💻 Pure Python — no dependencies
 - 🖥️ Works on any Linux machine
 
@@ -59,10 +59,32 @@ cd shadownet
 python3 shadownet.py
 ```
 
-```
-Enter target IP: 45.33.32.156
+### With flags
+```bash
+# full scan
+python3 shadownet.py -t 45.33.32.156
 
-[*] Scanning 45.33.32.156...
+# custom port range
+python3 shadownet.py -t 45.33.32.156 -p 1-100
+
+# single port
+python3 shadownet.py -t 45.33.32.156 -p 80
+
+# custom output file
+python3 shadownet.py -t 45.33.32.156 -o myscan.txt
+
+# all flags
+python3 shadownet.py -t 45.33.32.156 -p 1-1000 -o results.txt
+```
+
+### Without flags
+```bash
+python3 shadownet.py
+# asks for IP interactively
+```
+
+```
+[*] Scanning 45.33.32.156 ports 1-1000...
 
 [+] Port 22 OPEN
     Banner: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
@@ -74,35 +96,38 @@ Enter target IP: 45.33.32.156
 ## How It Works
 
 ```
-1. Ask user for target IP
+1. Ask user for target IP (flag or input)
 2. Launch 1000 threads — one per port
 3. Each thread knocks on its port (socket)
 4. If open → grab banner + print + save to file
-5. Results saved to [ip]_results.txt automatically
+5. Results saved to [ip]-results.txt automatically
 ```
 
 Under the hood — Python's `socket` library knocks on each port.
-`threading` runs all 1000 workers simultaneously.
+`threading` runs all workers simultaneously.
 If the connection returns `0` → port is open → banner grabbed.
 Anything else → closed, move on silently.
+
+---
 
 ## Code
 
 The full source code is available in the repository.
 See `shadownet.py` for the complete implementation.
 
+---
 
 ## Legal
 
-> ShadowNet is built for educational purposes and authorized testing only.  
-> Only scan targets you own or have explicit permission to test.  
+> ShadowNet is built for educational purposes and authorized testing only.
+> Only scan targets you own or have explicit permission to test.
 > Unauthorized scanning is illegal.
 
 ---
 
 ## Author
 
-**Mohamed Cherradi** — 0xredlog  
+**Mohamed Cherradi** — 0xredlog
 Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 
 - GitHub: [@rtx772-eng](https://github.com/rtx772-eng)
@@ -113,10 +138,10 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 
 ## Roadmap
 
-- [ ] v1.1 — Add banner grabbing (detect service on port)
-- [ ] v1.2 — Custom port range input
-- [ ] v1.3 — Save results to file
-- [ ] v2.0 — Multi-threaded (10x faster)
+- [x] v1.0 — Basic port scanner
+- [x] v1.1 — Threading + banner grabbing + file saving
+- [x] v2.0 — Argument flags (-t, -p, -o)
+- [ ] v2.1 — Help menu (--help)
 - [ ] v3.0 — Full recon suite
 
 ---
@@ -124,6 +149,6 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 *First tool. Not the last. — 0xredlog*
 
 <p align="center">
-  <em> إِنْ شَاءَ اللَّهُ </em><br>
-  <strong>  Inshallah  </strong>
+  <em>إِنْ شَاءَ اللَّهُ</em><br>
+  <strong>Inshallah</strong>
 </p>
