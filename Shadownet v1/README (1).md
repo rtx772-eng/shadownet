@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="logo.png" alt="ShadowNet Logo" width="800"/>
-</p>
-
-<p align="center">
   <strong>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</strong><br>
   <em>In the name of Allah, the Most Gracious, the Most Merciful</em><br><br>
   <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
@@ -10,6 +6,9 @@
 </p>
 
 ---
+<p align="center">
+  <img src="logo.png" alt="ShadowNet Logo" width="800"/>
+</p>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Platform](https://img.shields.io/badge/Platform-Linux-black?style=for-the-badge&logo=linux)
