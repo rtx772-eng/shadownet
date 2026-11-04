@@ -88,19 +88,8 @@ Anything else → closed, move on silently.
 
 ## Code
 
-```python
-
- ____  _               _               _   _      _
-/ ___|| |__   __ _  __| | _____      _| \\ | | ___| |_
-\\___ \\| '_ \\ / _` |/ _` |/ _ \\ \\ /\\ / /  \\| |/ _ \\ __|
- ___) | | | | (_| | (_| | (_) \\ V  V /| |\\  |  __/ |_
-|____/|_| |_|\\__,_|\\__,_|\\___/ \\_/\\_/ |_| \\_|\\___|\\__|
-
-                                        by 0xredlog v1.0
-
-  For educational use and authorized testing only.
-  Unauthorized scanning is illegal.
-{RESET}"""
+The full source code is available in the repository.
+See `shadownet.py` for the complete implementation.
 
 
 ## Legal
