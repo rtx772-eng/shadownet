@@ -15,7 +15,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Linux-black?style=for-the-badge&logo=linux)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Author](https://img.shields.io/badge/Author-0xredlog-red?style=for-the-badge)
-
+![Version](https://img.shields.io/badge/Version-3.0-red?style=for-the-badge)
 ---
 
 ## What is ShadowNet?
@@ -30,8 +30,9 @@
                                         by 0xredlog v2.0
 ```
 
-ShadowNet is a lightweight CLI port scanner and reconnaissance tool built from scratch in Python.
-It scans a target IP across ports 1–1000, grabs service banners, and saves results automatically — fast, clean, no noise.
+What is ShadowNet?
+
+ShadowNet is a lightweight CLI port scanner and reconnaissance tool built from scratch in Python. It scans a target IP across ports 1–1000, grabs service banners, performs HTTP recon, checks host availability, and saves results automatically — fast, clean, no noise.
 
 Built as a first offensive security tool by a self-taught red teamer.
 
@@ -46,6 +47,8 @@ Built as a first offensive security tool by a self-taught red teamer.
 - 🛡️ Error handling — never crashes on bad input
 - 🔴 Red terminal output
 - 🚩 Argument flags — `-t` `-p` `-o`
+- 🌐 HTTP recon — status code + server header
+- 📡 Host alive check — ping before scan
 - 💻 Pure Python — no dependencies
 - 🖥️ Works on any Linux machine
 
@@ -141,8 +144,8 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 - [x] v1.0 — Basic port scanner
 - [x] v1.1 — Threading + banner grabbing + file saving
 - [x] v2.0 — Argument flags (-t, -p, -o)
-- [ ] v2.1 — Help menu (--help)
-- [ ] v3.0 — Full recon suite
+- [x] v3.0 — HTTP recon + ping check
+- [ ] v4.0 — Full recon suite
 
 ---
 
