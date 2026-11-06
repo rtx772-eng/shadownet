@@ -2,7 +2,7 @@
   <strong> بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ </strong><br>
   <em>In the name of Allah , the Most Gracious , the Most Merciful </em><br><br>
   <strong>الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
-  <em>Inshallah — By His will .</em>
+  <em> Inshallah — By His will .</em>
 </p>
 
 ---
@@ -149,6 +149,6 @@ Self-Taught Red Teamer | Offensive Security | AI Red Teaming
 *First tool. Not the last. — 0xredlog*
 
 <p align="center">
-  <em>إِنْ شَاءَ اللَّهُ</em><br>
-  <strong>Inshallah</strong>
+  <em> إِنْ شَاءَ اللَّهُ </em><br>
+  <strong> Inshallah </strong>
 </p>
