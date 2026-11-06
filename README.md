@@ -27,7 +27,7 @@
  ___) | | | | (_| | (_| | (_) \ V  V /| |\  |  __/ |_
 |____/|_| |_|\__,_|\__,_|\___/ \_/\_/ |_| \_|\___|\__|
 
-                                        by 0xredlog v2.0
+                                        by 0xredlog v3.0
 ```
 
 What is ShadowNet?
@@ -57,9 +57,12 @@ Built as a first offensive security tool by a self-taught red teamer.
 ## Usage
 
 ```bash
+
 git clone https://github.com/rtx772-eng/shadownet
 cd shadownet
+pip install requests --break-system-packages
 python3 shadownet.py
+
 ```
 
 ### With flags
@@ -84,14 +87,16 @@ python3 shadownet.py -t 45.33.32.156 -p 1-1000 -o results.txt
 ```bash
 python3 shadownet.py
 # asks for IP interactively
-```
 
-```
+[+] Host 45.33.32.156 is ALIVE — starting scan...
+
 [*] Scanning 45.33.32.156 ports 1-1000...
 
 [+] Port 22 OPEN
     Banner: SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
 [+] Port 80 OPEN
+    HTTP Status: 200
+    Server: Apache/2.4.7 (Ubuntu)
 ```
 
 ---
@@ -99,15 +104,19 @@ python3 shadownet.py
 ## How It Works
 
 ```
-1. Ask user for target IP (flag or input)
-2. Launch 1000 threads — one per port
-3. Each thread knocks on its port (socket)
-4. If open → grab banner + print + save to file
-5. Results saved to [ip]-results.txt automatically
+1. Ping check — is host alive? If not → stop.
+2. Ask user for target IP (flag or input)
+3. Launch threads — one per port
+4. Each thread knocks on its port (socket)
+5. If open → grab banner + HTTP headers + save to file
+6. Results saved to [ip]-results.txt automatically
+
 ```
 
-Under the hood — Python's `socket` library knocks on each port.
-`threading` runs all workers simultaneously.
+Under the hood — socket → knocks on each port
+threading → runs all workers simultaneously
+requests → grabs HTTP headers on port 80/443
+subprocess → pings target before scanning
 If the connection returns `0` → port is open → banner grabbed.
 Anything else → closed, move on silently.
 
@@ -130,8 +139,11 @@ See `shadownet.py` for the complete implementation.
 
 ## Author
 
-**Mohamed Cherradi** — 0xredlog
-Self-Taught Red Teamer | Offensive Security | AI Red Teaming
+Mohamed Cherradi — 0xredlog Self-Taught Red Teamer | Offensive Security | AI Red Teaming
+
+GitHub: @rtx772-eng
+LinkedIn: mohamed-cherradi
+Instagram: @0xredlogz
 
 - GitHub: [@rtx772-eng](https://github.com/rtx772-eng)
 - LinkedIn: [mohamed-cherradi](https://www.linkedin.com/in/mohamed-cherradi-0b0140432)
