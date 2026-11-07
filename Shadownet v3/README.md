@@ -6,7 +6,7 @@
 
 ## الحمد لله على كل شيء — Alhamdulillah for everything 🤲
 
-### * Inshallah — By His will . *
+### * InshAllah — By His will . *
 
 </div>
 
