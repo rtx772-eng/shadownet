@@ -2,11 +2,11 @@
 
 # بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 
-### *In the name of Allah, the Most Gracious, the Most Merciful*
+### * In the name of Allah , the Most Gracious , the Most Merciful *
 
 ## الحمد لله على كل شيء — Alhamdulillah for everything 🤲
 
-### *Inshallah — By His will.*
+### * Inshallah — By His will . *
 
 </div>
 
