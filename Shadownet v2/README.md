@@ -1,10 +1,14 @@
-<p align="center">
-  <strong> بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ </strong><br>
-  <em>In the name of Allah , the Most Gracious , the Most Merciful </em><br><br>
-  <strong> الحمد لله على كل شيء — Alhamdulillah for everything 🤲</strong><br><br>
-  <em> Inshallah — By His will .</em>
-</p>
+<div align="center">
 
+# بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+
+### * In the name of Allah , the Most Gracious , the Most Merciful *
+
+## الحمد لله على كل شيء — Alhamdulillah for everything 🤲
+
+### * InshAllah — By His will . *
+
+</div>
 ---
 
 <p align="center">
